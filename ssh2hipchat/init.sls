@@ -11,5 +11,5 @@
     - source: salt://ssh2hipchat/pam.d/ssh2hipchat
     - user: root
     - group: root
-    - mode: 644
+    - mode: 755
 
