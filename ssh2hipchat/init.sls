@@ -9,5 +9,5 @@
 /etc/pam.d/sshd:
   file.append:
     - source: salt://ssh2hipchat/pam.d/ssh2hipchat
-    - text: session required pam_exec.so seteuid /usr/local/bin/ssh2hipchat.sh
+    - text: "session required pam_exec.so seteuid /usr/local/bin/ssh2hipchat.sh"
 
