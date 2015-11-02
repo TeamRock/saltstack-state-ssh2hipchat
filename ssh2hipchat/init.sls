@@ -6,10 +6,8 @@
     - mode: 755
     - template: jinja
 
-/etc/pam.d/ssh2hipchat:
-  file.managed:
+/etc/pam.d/sshd:
+  file.append:
     - source: salt://ssh2hipchat/pam.d/ssh2hipchat
-    - user: root
-    - group: root
-    - mode: 644
+    - text: session required pam_exec.so seteuid /usr/local/bin/ssh2hipchat.sh
 
