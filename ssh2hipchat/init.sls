@@ -1,4 +1,4 @@
-/usr/local/bin/ssh2hipchat.sh
+/usr/local/bin/ssh2hipchat.sh:
   file.managed:
     - source: salt://ssh2hipchat/ssh2hipchat.sh
     - user: root
