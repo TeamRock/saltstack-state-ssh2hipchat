@@ -6,7 +6,7 @@
     - mode: 644
     - template: jinja
 
-/etc/pam.d/sshd2hipchat:
+/etc/pam.d/ssh2hipchat:
   file.managed:
     - source: salt://ssh2hipchat/pam.d/ssh2hipchat
     - user: root
